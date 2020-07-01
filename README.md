@@ -15,7 +15,7 @@ This repository contains the inference code for paper [**Age Progression and Reg
 3. run `test.sh`, and the generation results will be save into `./results`. You could modify the corresponding code in `age_cycle_gan_model.py` to also generate attention maps.
 
 ## Citation
-@inproceedings{Li2020AgePA,
+>@inproceedings{Li2020AgePA,
   title={Age Progression and Regression with Spatial Attention Modules},
   author={Qi Li and Yunfan Liu and Zhenan Sun},
   booktitle={AAAI},
