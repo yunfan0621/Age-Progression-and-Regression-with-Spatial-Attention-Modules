@@ -18,7 +18,7 @@ class UnalignedDataset(BaseDataset):
 
         # read and parse the image list file
         self.img_list_file = os.path.join(opt.dataroot, opt.phase + '_img_list.txt')
-        self.img_list, self.age_list, self.age_group_list = self.parse_img_list_file(self.img_list_file)
+        self.img_list, self.age_group_list = self.parse_img_list_file(self.img_list_file)
 
         # manage the layout of data
         self.age_group_img_dict = {} # age_group -> img
@@ -112,27 +112,19 @@ class UnalignedDataset(BaseDataset):
 
         # df = pandas.read_csv(file_path, delimiter=' ', header=None)
         img_list = []
-        age = []
         age_group = []
         with open(file_path, 'r') as f:
             for line in f.readlines():
                 line_parts = line.strip('\n').split(' ')
                 img_list.append(line_parts[0])
-                age.append(int(line_parts[1]))
-                age_group.append(int(line_parts[2]))
-
-        '''
-        img_list  = df[0].tolist()
-        age       = df[1].tolist()
-        age_group = df[2].tolist()
-        '''
+                age_group.append(int(line_parts[1]))
 
         # shuffle data list
-        z = list(zip(img_list, age, age_group))
+        z = list(zip(img_list, age_group))
         random.shuffle(z)
-        img_list, age, age_group = zip(*z)
+        img_list, age_group = zip(*z)
 
-        return img_list, age, age_group
+        return img_list, age_group
 
     def get_label_tensor(self, age_group):
         label = np.zeros(len(self.age_group_index), dtype=float)

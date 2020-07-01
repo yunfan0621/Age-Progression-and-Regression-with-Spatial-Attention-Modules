@@ -53,7 +53,6 @@ if __name__ == '__main__':
             # save the individual generation result
             gen_save_dir = os.path.join(save_dir, 'generation')
             util.mkdirs(gen_save_dir)
-            ST()
             for age_label in gen_ret_im.keys():
                 img_base_name = img_name.split('.')[0]
                 gen_save_path = os.path.join(gen_save_dir, img_base_name + '_cluster%d.jpg' % (age_label + 1))
