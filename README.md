@@ -16,10 +16,10 @@ This repository contains the inference code for paper [**Age Progression and Reg
 
 ## Citation
 >@inproceedings{Li2020AgePA,<br>
-  title={Age Progression and Regression with Spatial Attention Modules},<br>
-  author={Qi Li and Yunfan Liu and Zhenan Sun},<br>
-  booktitle={AAAI},<br>
-  year={2020}<br>
+	title={Age Progression and Regression with Spatial Attention Modules},<br>
+	author={Qi Li and Yunfan Liu and Zhenan Sun},<br>
+	booktitle={AAAI},<br>
+	year={2020}<br>
 }
 
 ## Acknowledge
