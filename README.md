@@ -22,15 +22,3 @@ This repository contains the inference code for paper [**Age Progression and Reg
 	booktitle={AAAI},<br>
 	year={2020}<br>
 }
-
-## Acknowledge
-The organization of code for this project is largely borrowed from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [GANimation](https://github.com/albertpumarola/GANimation). 
-
-
-
-
- 
-
-
-
-
