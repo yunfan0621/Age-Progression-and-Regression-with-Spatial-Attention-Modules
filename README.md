@@ -10,9 +10,10 @@ This repository contains the inference code for paper [**Age Progression and Reg
 * CUDA 8.0
 
 ## Usage
-1. Please download [pre-trained models](https://drive.google.com/drive/folders/1CvOCifgE-uBfdHfCI56-1tHJSgr7HZQp?usp=sharing) (two generator networks) and place them under `./checkpoint`.
-2. Modify `test.sh` as you see fit.
-3. run `test.sh`, and the generation results will be save into `./results`. You could modify the corresponding code in `age_cycle_gan_model.py` to also generate attention maps.
+1. Put your test images under the folder `./datasets/<name_of_dataset>`. Then write a text file with each line containing <name_of_image> and <index_of_age_group>, seperated by a space character. Example input images and list files are provided.
+2. Please download [pre-trained models](https://drive.google.com/drive/folders/1CvOCifgE-uBfdHfCI56-1tHJSgr7HZQp?usp=sharing) (two generator networks) and place them under `./checkpoint`.
+3. Modify `test.sh` as you see fit.
+4. run `test.sh`, and the generation results will be save into `./results`. You could modify the corresponding code in `age_cycle_gan_model.py` to also generate attention maps.
 
 ## Citation
 >@inproceedings{Li2020AgePA,<br>
