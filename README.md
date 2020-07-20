@@ -12,7 +12,7 @@ This repository contains the inference code for paper [**Age Progression and Reg
 ## Usage
 1. Put your test images under the folder `./datasets/<name_of_dataset>`. Then write a text file with each line containing `<name_of_image>` and `<index_of_age_group>`, seperated by a space character. Example input images and list files are provided.
 2. Please download [pre-trained models](https://drive.google.com/drive/folders/1CvOCifgE-uBfdHfCI56-1tHJSgr7HZQp?usp=sharing) (two generator networks) and place them under `./checkpoint`.
-3. Modify `test.sh` as you see fit.
+3. Modify `test.sh` as it fits your environment.
 4. run `test.sh`, and the generation results will be save into `./results`. You could modify the corresponding code in `age_cycle_gan_model.py` to also generate attention maps.
 
 ## Citation
@@ -22,3 +22,9 @@ This repository contains the inference code for paper [**Age Progression and Reg
 	booktitle={AAAI},<br>
 	year={2020}<br>
 }
+
+## Acknowledgement
+The framework of this project has borrowed from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [GANimation](https://github.com/albertpumarola/GANimation). We appreaciate their great work!
+
+## Note
+This repo is still under construction, please use with care.
